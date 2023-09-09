@@ -12,8 +12,8 @@ func getAllCommits(owner string, repo string) []*github.RepositoryCommit {
 
 	r := make([]*github.RepositoryCommit, 0)
 
-	for i := 0; true; i++ {
-		log.Printf("resolve: Getting commits page #%d...", i+1)
+	for i := 1; true; i++ {
+		log.Printf("resolve: Getting commits page #%d...", i)
 		opt := github.CommitsListOptions{
 			ListOptions: github.ListOptions{
 				Page:    i,
