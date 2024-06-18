@@ -11,3 +11,9 @@
 ```shell
 ./github-commit-exporter --repo <Repo的完整名称> --token <拥有Repo访问权的令牌> --out <输出文件名>.xlsx
 ```
+
+例如：
+
+```shell
+./github-commit-exporter --repo Cinea4678/github-commit-exporter --token ghp_0hCrFHl******S74TzZUi --out commit-history.xlsx
+```
